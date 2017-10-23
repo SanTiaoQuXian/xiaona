@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="description" content="">
+  	<title>娜娜小代购</title>
+  	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+	<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+	<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+	<!--如果你用到了拓展包中的组件，还需要引用下面两个-->
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
+	<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.js' charset='utf-8'></script>
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+	<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/swiper-3.4.2.min.css" rel="stylesheet"/>
+  	<link href="css/index.css" rel="stylesheet">
+</head>
+</head>
+<body>
+	<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+    <div class="page-group">
+        <!-- 单个page ,第一个.page默认被展示-->
+        <div class="page">
+            <!-- 工具栏 -->
+		    <div class="nav">
+				<a class="current" href="index.html">首页</a>
+				<a href="msg.html">呼叫</a>
+				<a href="private.html">热门</a>
+				<a href="my.html">小娜</a>
+			</div>
+
+            <!-- 这里是页面内容区 -->
+            <div class="content">
+		  	<!-- Slider -->
+		  	<div class="swiper-container slide">
+				<div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="images/美妆-首页-banner.png"/></div>		            
+				    <div class="swiper-slide"><img src="images/美妆-首页-banner.png"/></div>
+				    <div class="swiper-slide"><img src="images/美妆-首页-banner.png"/></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="dingwei"><span class="glyphicon glyphicon-map-marker"></span><span class="didian">深圳</span></div>
+			</div>
+			<div class="main-info flex-row card">
+		        <a onclick="hcs();" class="item border-right border-bottom" external>
+		        	<img src="images/美妆-首页-meirong.png" alt="" />
+		        	<span>香港专区</span>
+		        </a>
+		        <a onclick="hcs();" class="item border-right border-bottom" external>
+		        	<img src="images/美妆-首页-meiti.png" alt="" />
+		        	<span>澳门专区</span>
+		        </a>
+		        <a onclick="hcs();" class="item border-bottom" external>
+		        	<img src="images/美妆-首页yangshen.png" alt="" />
+		        	<span>泰国专区</span>
+		        </a>
+		        <a onclick="hcs();" class="item border-right border-bottom" external>
+		        	<img src="images/美妆-首页-taocan.png" alt="" />
+		        	<span>韩国专区</span>
+		        </a>    		
+		    </div>
+		    <div class="zhanshi">
+		    	<img src="images/weizheng.png" style="border-right: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;"/>
+		    	<img src="images/shoushen.png"style="border-bottom: 1px solid #e6e6e6;"/>
+		    	<img src="images/wenxiu.png"style="border-right: 1px solid #e6e6e6;"/>
+		    	<img src="images/tidiao.png"/>
+		    </div>
+		    <div class="fenxiang">
+		    	<img src="images/xinren.png" style="border-right: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;"/>
+		    	<img src="images/fenxiang.png"/>
+		    </div>
+		    <div class="xianggang" onclick="hcs();">
+		    	<div class="biaoti">
+		    		<span>香港专区</span>
+		    		<a onclick="hcs();">更多</a>
+		    	</div>
+		    	<div class="xiangshui">
+		    		<img src="images/美妆-首页-1.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">香港香水...</span>
+		    		<span class="comment">
+						<span>851</span>
+						<span>3651</span>
+					</span>
+		    	</div>
+		    	<div class="iphone">
+		    		<img src="images/美妆-首页-2.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">iphone x</span>
+		    		<span class="comment">
+						<span>0</span>
+						<span>2057</span>
+					</span>
+		    	</div>
+		    	<div class="mianmo">
+		    		<img src="images/美妆-首页-3.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">香港面膜...</span>
+		    		<span class="comment">
+						<span>152</span>
+						<span>1208</span>
+					</span>
+		    	</div>
+		    </div>
+		    <div class="xianggang" onclick="hcs();">
+		    	<div class="biaoti">
+		    		<span>澳门专区</span>
+		    		<a onclick="hcs();">更多</a>
+		    	</div>
+		    	<div class="xiangshui">
+		    		<img src="images/美妆-首页-4.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">澳门香水...</span>
+		    		<span class="comment">
+						<span>18</span>
+						<span>16</span>
+					</span>
+		    	</div>
+		    	<div class="iphone">
+		    		<img src="images/美妆-首页-5.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">iphone x</span>
+		    		<span class="comment">
+						<span>0</span>
+						<span>1028</span>
+					</span>
+		    	</div>
+		    	<div class="mianmo">
+		    		<img src="images/美妆-首页-6.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">澳门面膜...</span>
+		    		<span class="comment">
+						<span>2</span>
+						<span>0</span>
+					</span>
+		    	</div>
+		    </div>
+		    <div class="xianggang" onclick="hcs();">
+		    	<div class="biaoti">
+		    		<span>泰国专区</span>
+		    		<a onclick="hcs();">更多</a>
+		    	</div>
+		    	<div class="xiangshui">
+		    		<img src="images/美妆-首页-7.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">泰国香水...</span>
+		    		<span class="comment">
+						<span>12</span>
+						<span>31</span>
+					</span>
+		    	</div>
+		    	<div class="iphone">
+		    		<img src="images/美妆-首页-8.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">iphone x</span>
+		    		<span class="comment">
+						<span>0</span>
+						<span>0</span>
+					</span>
+		    	</div>
+		    	<div class="mianmo">
+		    		<img src="images/美妆-首页-9.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">泰国面膜RAY</span>
+		    		<span class="comment">
+						<span>78</span>
+						<span>521</span>
+					</span>
+		    	</div>
+		    </div>
+		    <div class="xianggang hanguo" onclick="hcs();">
+		    	<div class="biaoti">
+		    		<span>韩国专区</span>
+		    		<a onclick="hcs();">更多</a>
+		    	</div>
+		    	<div class="xiangshui">
+		    		<img src="images/美妆-首页-4.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">韩国香水...</span>
+		    		<span class="comment">
+						<span>21</span>
+						<span>102</span>
+					</span>
+		    	</div>
+		    	<div class="iphone">
+		    		<img src="images/美妆-首页-3.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">iphone x</span>
+		    		<span class="comment">
+						<span>53</span>
+						<span>18</span>
+					</span>
+		    	</div>
+		    	<div class="mianmo">
+		    		<img src="images/美妆-首页-7.png"/>
+		    		<span style="padding-left: 0.5rem;color: #ff4a4a;">韩国面膜RAY</span>
+		    		<span class="comment">
+						<span>36</span>
+						<span>12</span>
+					</span>
+		    	</div>
+		    </div>
+		</div>
+        </div>
+
+        
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+  	<script type="text/javascript" src="js/m.js"></script>
+   
+	<script>
+		function hcs(){
+			alert("该功能正在研发中，敬请期待！");
+		}
+		
+	</script>	
+</body>
+</html>

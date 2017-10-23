@@ -1,0 +1,284 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;;
+}
+ul, ol{list-style: none}
+img{border: none;}
+table{border-collapse: collapse; border-spacing: 0}
+td, th{padding: 0}
+a{color: #333; text-decoration: none}
+a:focus, a:visited, a:active{color: #333; text-decoration: none}
+.clearfix:before, .clearfix:after{content: " "; display: table; clear: both}
+.text-overflow{white-space: nowrap; overflow: hidden}
+.text-ellipsis{overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+.text-break{word-break: break-all; word-wrap: break-word}
+
+.swiper-container{
+	position: relative;
+	padding-bottom: 0!important;
+}
+.swiper-container .dingwei{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	padding-top: 0.3rem;
+	padding-left: 0.4rem;
+}
+.swiper-pagination{
+	position: absolute;
+	bottom: 0;
+}
+.glyphicon{
+	font-size: 18px;
+	vertical-align: sub;
+}
+.dingwei .didian{
+	padding-left: 0.2rem;
+}
+.dingwei span{
+	color:#ffda44;
+}
+.didian{
+	font-size: 14px;
+	color: #333;
+}
+.swiper-wrapper img{width: 100%;}
+.swiper-pagination-bullet{background: #e6e6e6;opacity: 1;}
+.swiper-pagination-bullet-active{background: #666666;}
+.bar-tab .tab-item .icon{
+	font-size: 24px!important;
+	height: 26px!important;
+}
+.bar a:hover{
+	text-decoration: none!important;
+}
+.main-info {
+	overflow: hidden;
+  	justify-content: space-between;
+  	align-items: center;
+  	flex-wrap: wrap;
+  	background: #fff!important;
+  	border-bottom: 1px solid #e5e5e5;
+}
+.main-info .item {
+  	-webkit-flex-basis: 33%;
+  	width: 25%;
+  	height: 90px;
+  	text-align: center;
+  	font-size: 14px;
+  	float: left;
+}
+
+.main-info .item img {
+  	display: block;
+  	width: 50px;
+  	height: 50px;
+  	margin: 10px auto 2px;
+}
+
+.card{
+	box-shadow:none;
+	margin: 0;
+}
+.zhanshi{
+	margin-top: 8px;
+	overflow: hidden;
+}
+.zhanshi img{
+	width: 50%;
+	float: left;
+}
+.fenxiang{
+	margin-top: 6px;
+	overflow: hidden;
+}
+.fenxiang img{
+	width: 50%;
+	float: left;
+}
+.xianggang{
+	background: #fff;
+	padding: 0.3rem 0.6rem;
+	overflow: hidden;
+}
+.biaoti{
+	overflow: hidden;
+}
+.xianggang img{
+	width: 100%;
+}
+.xianggang span{
+	float: left;
+}
+.xianggang a{
+	float: right;
+	padding-right: 0.3rem;
+	text-decoration: underline;
+	color: #666;
+	font-size: 12px;
+}
+.xiangshui{
+	width: 32%;
+	display: inline-block;
+	float: left;
+	margin-right: 0.3rem;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+	margin-top: 0.4rem;
+	padding-bottom: 0.3rem;
+}
+.xiangshui span{
+	display: block;
+	width: 100%;
+	padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.iphone span{
+	display: block;
+	width: 100%;
+	padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.mianmo span{
+	display: block;
+	width: 100%;
+	padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.iphone{
+	width: 32%;
+	display: inline-block;
+	float: left;
+	margin-right: 0.3rem;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+	margin-top: 0.4rem;
+	padding-bottom: 0.3rem;
+}
+.mianmo{
+	width: 32%;
+	display: inline-block;
+	float: left;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    margin-top: 0.4rem;
+    padding-bottom: 0.3rem;
+}
+.nav{position: fixed;bottom: 0;left: 0;z-index: 9999;width: 100%;height: 50px;overflow: hidden;background: rgba(237,235,235,.9);}
+.nav a{float: left;width: 25%;text-align: center;font-size: 0.6rem;padding-top: 30px;color: #808080;-webkit-tap-highlight-color:transparent;}
+.nav a:nth-child(1){background: url(../images/nav_1.png) center 8px no-repeat;background-size:20px auto ;}
+.nav a:nth-child(1):hover,.nav a:nth-child(1).current{background: url(../images/nav_1h.png) center 8px no-repeat;background-size:20px auto ;}
+.nav a:nth-child(2){background: url(../images/nav_2.png) center 7px no-repeat;background-size:17px auto ;}
+.nav a:nth-child(2):hover,.nav a:nth-child(2).current{background: url(../images/nav_2h.png) center 7px no-repeat;background-size:17px auto ;}
+.nav a:nth-child(3){background: url(../images/nav_3.png) center 8px no-repeat;background-size:19px auto ;}
+.nav a:nth-child(3):hover,.nav a:nth-child(3).current{background: url(../images/nav_3h.png) center 8px no-repeat;background-size:19px auto ;}
+.nav a:nth-child(4){background: url(../images/nav_4.png) center 8px no-repeat;background-size:16px auto ;}
+.nav a:nth-child(4):hover,.nav a:nth-child(4).current{background: url(../images/nav_4h.png) center 8px no-repeat;background-size:16px auto ;}
+.hanguo{
+	margin-bottom: 54px;
+}
+.comment {
+    text-align: right;
+    color: #999;
+    height: 22px;
+    line-height: 22px;
+}
+.comment span:nth-child(1) {
+    display: inline-block;
+    background: url(../images/trendNotLike.png) no-repeat left center;
+    background-size: 16px auto;
+    width: 42px;
+    padding-left: 20px;
+    width: 50%;
+    text-align: center;
+}
+.comment span:nth-child(2) {
+    display: inline-block;
+    background: url(../images/trendConment.png) no-repeat left center;
+    background-size: 16px auto;
+    width: 42px;
+    padding-left: 20px;
+    width: 50%;
+    text-align: center;
+}
+.head {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    background: #ffda44;
+}
+.head a.fl {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    z-index: 3;
+    width: 15px;
+    height: 20px;
+    background: url(../images/icon_left_arr.png) no-repeat;
+    background-size: 10px auto;
+    -webkit-tap-highlight-color:transparent
+}
+.fl {
+    float: left;
+}
+.head h1{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+.content1 {
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.headImg {
+    position: relative;
+}
+.content1 .touxiang {
+    width: 90px;
+    height: 90px;
+}
+.content1 ul {
+    padding-top: 10px;
+    padding-left: 8%;
+}
+.content1 ul li {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #ffda44;
+}
+.content1 ul li p {
+    width: 92%;
+    height: 48px;
+    line-height: 48px;
+}
+.name {
+    float: left;
+    font-size: 16px;
+    color: #ffda44;
+}
+.explain {
+    float: right;
+    font-size: 14px;
+    color: #ffda44;
+}
+.beijing{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 100px;
+}
+.neirong{
+    position: absolute;
+    top: 140px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
